@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 23.797 s <<< FAILURE! - in runner.TestRunner
+Google Search.Search for FailTest  Time elapsed: 5.684 s  <<< FAILURE!
+java.lang.AssertionError: Title doesn't contain: NotInTitle
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at scenarios.GoogleSteps.the_title_should_contain(GoogleSteps.java:33)
+	at ✽.the title should contain "NotInTitle"(file:///Users/apple/Desktop/selenium-bdd-demo/src/test/resources/features/GoogleSearch.feature:16)
+

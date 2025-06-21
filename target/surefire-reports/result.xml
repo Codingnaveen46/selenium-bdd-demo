@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="23.462" tests="3" skipped="0" failures="1" errors="0">
+<testcase classname="Google Search" name="Search for Selenium" time="11.889">
+<system-out><![CDATA[
+Given I open Google.........................................................passed
+When I search for "Selenium"................................................passed
+Then the title should contain "Selenium"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Google Search" name="Search for Java" time="5.777">
+<system-out><![CDATA[
+Given I open Google.........................................................passed
+When I search for "Java"....................................................passed
+Then the title should contain "Java"........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Google Search" name="Search for FailTest" time="5.673">
+<failure type="java.lang.AssertionError" message="Title doesn't contain: NotInTitle">
+<![CDATA[java.lang.AssertionError: Title doesn't contain: NotInTitle
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at scenarios.GoogleSteps.the_title_should_contain(GoogleSteps.java:33)
+	at ✽.the title should contain "NotInTitle"(file:///Users/apple/Desktop/selenium-bdd-demo/src/test/resources/features/GoogleSearch.feature:16)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open Google.........................................................passed
+When I search for "FailTest"................................................passed
+Then the title should contain "NotInTitle"..................................failed
+]]></system-out>
+</testcase>
+</testsuite>
