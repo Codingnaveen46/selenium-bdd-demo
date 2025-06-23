@@ -32,4 +32,9 @@ public class GoogleSteps {
         String title = driver.getTitle();
         assertTrue("Title doesn't contain: " + expected, title.contains(expected));
     }
+
+    // added new comment
+    //to integrate this bugasura in windows need to use .bat ext
+
+
 }
